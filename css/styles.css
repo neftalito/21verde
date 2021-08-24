@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html{
+    background-color: #87dfc1;
+}
+nav div{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+nav{
+    display:grid;
+    grid-template-columns: 10% 90%;
+    border-bottom: 2px solid #4aa587;
+}
+nav div a:hover{
+    background-color:#4aa587;
+    color:white
+}
+nav div a{
+    text-decoration: none;
+    padding: 1rem 1rem;
+    color: black;
+    border-radius: 1rem;
+}
+
+h2{
+    text-align: center;
+}
+
+.Centrado{
+    text-align:center;
+}
+
+.Kit{
+    max-width: 340px;
+    border: 2px solid black;
+    transition: transform .2s ease-out;
+    background-color: #87dfc1;
+}
+.Kit:hover{
+    transform: scale(1.2)
+}
+.KitInfo{
+    margin: 1rem;
+}
+#NuestrosKits{
+    display:flex;
+    justify-content: space-around
+}
+.Formulario{
+    border: 2px solid black;
+    max-width: 25%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+.Formulario input{
+    border-radius: 1rem;
+    text-align: center;
+}

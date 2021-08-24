@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Forms test</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="img/logo.png" width="100px">
+            </a>
+            <div>
+                <a href="#Nosotros">Nosotros</a>
+                <a href="#NuestrosKits">Nuestros Kits</a>
+                <a href="#Contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <h2>Nuestros kits</h2>
+        <div id="NuestrosKits">
+            <div class="Kit">
+                    <div id="Inicial" class="KitInfo">
+                        <img src="http://placekitten.com/300/300" alt="">
+                        <p>Precio: XX$</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt impedit consectetur nesciunt consequuntur sunt dolore vitae rem eligendi unde voluptate</p>
+                    </div>
+            </div>
+            <div class="Kit">
+                <div id="Medio" class="KitInfo">
+                    <img src="http://placekitten.com/300/300" alt="">
+                        <p>Precio: XX$</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt impedit consectetur nesciunt consequuntur sunt dolore vitae rem eligendi unde voluptate</p>
+                    </div>
+            </div>
+            <div class="Kit">
+                <div id="Avanzado" class="KitInfo">
+                    <img src="http://placekitten.com/300/300" alt="">
+                        <p>Precio: XX$</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt impedit consectetur nesciunt consequuntur sunt dolore vitae rem eligendi unde voluptate</p>
+                    </div>
+            </div>
+        </div>
+
+        <h2>Sobre Nosotros</h2>
+        <div id="Nosotros" class="Centrado">
+            <img src="http://placekitten.com/800/600" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, officiis? Ab, quibusdam similique porro exercitationem fugit illo nihil. Ullam numquam iure nulla voluptatem nemo officia eum impedit aliquid eos deleniti.</p>
+        </div>
+    
+        <h2>Contáctanos</h2>
+        <div class="Formulario">
+            <form action="/Form/"class="Centrado" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="Bot-Input">
+                <div class="Contactanos" id="Contacto">
+                    <div class="bot-input" hidden>
+                        <label for="Bot-Input">No llenes esto si sos humano</label>
+                        <input type="hidden" name="Bot-Input">
+                    </div>
+                    <div class="Nombre">
+                        <label for="Nombre">Nombre completo*</label><br>
+                        <input type="text" name="Nombre" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="Telefono">
+                        <label for="Telefono">Un número de contacto*</label><br>
+                        <input type="Telefono" name="Telefono" placeholder="123 456-7890" required>
+                    </div>
+                    <div class="Email">
+                        <label for="Email">Un correo de contacto (Opcional)</label><br>
+                        <input type="email" name="Email" placeholder="21verde.lp@gmail.com">
+                    </div>
+                    <div class="TiposKits">
+                        <div>
+                            <div>¿Qué kit querés?</div>
+                            <input type="radio" name="TiposKits" value="Inicial" required>
+                            <label for="Inicial">Inicial</label><br>
+                            <input type="radio" name="TiposKits" value="Medio">
+                            <label for="Medio">Medio</label><br>
+                            <input type="radio" name="TiposKits" value="Avanzado">
+                            <label for="Avanzado">Avanzado</label>
+                        </div>
+                    </div>
+                    <div class="CantidadKits">
+                        <label for="CantidadKits" required>¿Cuántos kits vas a comprar?*</label><br>
+                        <input type="number" name="CantidadKits" step="1" min="1" max="10" value="1">
+                    </div>
+                    <div data-netlify-recaptcha="true" class="Centrado"></div>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="Redes">
+
+        </div>
+    </footer>
+</body>
+</html>
