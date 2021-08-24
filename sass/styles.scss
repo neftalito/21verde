@@ -78,6 +78,9 @@ hr{
 }
 .KitInfo{
     margin: 1rem;
+    & img{
+        border-radius: 1rem;
+    }
 }
 .Kits{
     display:flex;
