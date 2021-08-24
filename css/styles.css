@@ -36,7 +36,9 @@ h2{
 .Centrado{
     text-align:center;
 }
-
+.g-recaptcha{
+    display:inline-block;
+}
 .Kit{
     max-width: 340px;
     border: 2px solid black;
