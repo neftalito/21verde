@@ -30,11 +30,14 @@ main{
 h2{
     text-transform: uppercase;
     text-align: center;
+    text-decoration: underline;
 }
 h3{
     text-decoration: underline;
 }
-
+h2,h3{
+    text-decoration-color: $color-secundario;
+}
 nav{
     overflow: hidden;
 
@@ -65,6 +68,7 @@ nav{
     }
 }
 hr{
+    margin: 2rem auto;
     border: 1px solid $color-secundario;
     max-width: 95%;
 }
@@ -72,7 +76,7 @@ hr{
 /* Kits */
 .Kit{
     max-width: min-content;
-    border: 2px solid $color-secundario;
+    /*border: 2px solid $color-secundario;*/
     border-radius: 1rem;
     background-color: #87dfc1;
 }
@@ -102,6 +106,10 @@ hr{
 }
 
 /* Formulario */
+.Formulario-Titulo{
+    @extend h2;
+    font-size: 30px;
+}
 .Formulario{
     padding: 1rem 0;
     & input, & select{
@@ -151,6 +159,11 @@ hr{
     border-radius: 1rem;
     background-color: $color-secundario;
 }
+.Box-Shadow-Kit{
+    @extend .Box-Shadow;
+    background-color: $color-primario;
+    border-radius: 1rem !important;
+}
 .Formulario-width{
     max-width: 50%;
 }
@@ -167,8 +180,7 @@ hr{
         }
     }
 }
-@media screen and (max-width:1024px){
-    
+@media screen and(max-width:1160px) {
     .Kits{
         flex-direction: column;
         align-items: center;
@@ -176,6 +188,15 @@ hr{
     .Kit{
         margin-bottom: 2rem;
     }
+}
+@media  screen and(max-width:1120px){
+    .Foto-Grupal{
+        border-radius: 0;
+    }
+    
+}
+@media screen and (max-width:1024px){
+    
     .Formulario-width{
         max-width: 100% !important;
     }
