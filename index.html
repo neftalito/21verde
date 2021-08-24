@@ -4,96 +4,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
+
+    
     <title>Forms test</title>
 </head>
 <body>
+    <a href="#top"></a>
     <header>
         <nav>
-            <a href="index.html">
+            <a href="#top" class="Logo">
                 <img src="img/logo.png" width="100px">
             </a>
             <div>
-                <a href="#Nosotros">Nosotros</a>
                 <a href="#NuestrosKits">Nuestros Kits</a>
+                <a href="#Nosotros">Nosotros</a>
                 <a href="#Contacto">Contacto</a>
             </div>
         </nav>
     </header>
     <main>
 
-        <h2>Nuestros kits</h2>
         <div id="NuestrosKits">
-            <div class="Kit">
-                    <div id="Inicial" class="KitInfo">
-                        <img src="http://placekitten.com/300/300" alt="">
-                        <p>Precio: XX$</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt impedit consectetur nesciunt consequuntur sunt dolore vitae rem eligendi unde voluptate</p>
-                    </div>
-            </div>
-            <div class="Kit">
-                <div id="Medio" class="KitInfo">
-                    <img src="http://placekitten.com/300/300" alt="">
-                        <p>Precio: XX$</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt impedit consectetur nesciunt consequuntur sunt dolore vitae rem eligendi unde voluptate</p>
-                    </div>
-            </div>
-            <div class="Kit">
-                <div id="Avanzado" class="KitInfo">
-                    <img src="http://placekitten.com/300/300" alt="">
-                        <p>Precio: XX$</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt impedit consectetur nesciunt consequuntur sunt dolore vitae rem eligendi unde voluptate</p>
-                    </div>
-            </div>
-        </div>
 
-        <h2>Sobre Nosotros</h2>
-        <div id="Nosotros" class="Centrado">
-            <img src="http://placekitten.com/800/600" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, officiis? Ab, quibusdam similique porro exercitationem fugit illo nihil. Ullam numquam iure nulla voluptatem nemo officia eum impedit aliquid eos deleniti.</p>
-        </div>
-    
-        <h2>Contáctanos</h2>
-        <div class="Formulario">
-            <form action="Form/success.html" class="Centrado" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="Bot-Input">
-                <div class="Contactanos" id="Contacto">
-                    <div class="bot-input" hidden>
-                        <label for="Bot-Input">No llenes esto si sos humano</label>
-                        <input type="hidden" name="Bot-Input">
+            <h2>Nuestros kits</h2>
+            <div class="Kits">
+                <div class="Kit">
+                        <div id="Inicial" class="KitInfo">
+                            <img src="http://placekitten.com/300/300" alt="">
+                            <h3>Inicial</h3>
+                            <h4>Precio: $650</h4>
+                            <h4>¿Qué contiene?</h4>
+                            <ul>
+                                <li>
+                                    <p>Cuenta con 3 semillas (tomate, morrón, lechuga)</p>
+                                </li>
+                                <li>
+                                    <p>Un cajon de 60x30x15</p>
+                                </li>
+                                <li>
+                                    <p>Una bolsa de compost</p>
+                                </li>
+                                <li>
+                                    <p>Una guía con el paso a paso</p>
+                                </li>
+                                <li>
+                                    <p>4 tutores</p>
+                                </li>
+                                <li>
+                                    <p>Una planta aromática</p>
+                                </li>
+                            </ul>
                     </div>
-                    <div class="Nombre">
-                        <label for="Nombre">Nombre completo*</label><br>
-                        <input type="text" name="Nombre" placeholder="Tu Nombre" required>
-                    </div>
-                    <div class="Telefono">
-                        <label for="Telefono">Un número de contacto*</label><br>
-                        <input type="Telefono" name="Telefono" placeholder="123 456-7890" required>
-                    </div>
-                    <div class="Email">
-                        <label for="Email">Un correo de contacto (Opcional)</label><br>
-                        <input type="email" name="Email" placeholder="21verde.lp@gmail.com">
-                    </div>
-                    <div class="TiposKits">
-                        <div>
-                            <div>¿Qué kit querés?</div>
-                            <input type="radio" name="TiposKits" value="Inicial" required>
-                            <label for="Inicial">Inicial</label><br>
-                            <input type="radio" name="TiposKits" value="Medio">
-                            <label for="Medio">Medio</label><br>
-                            <input type="radio" name="TiposKits" value="Avanzado">
-                            <label for="Avanzado">Avanzado</label>
-                        </div>
-                    </div>
-                    <div class="CantidadKits">
-                        <label for="CantidadKits" required>¿Cuántos kits vas a comprar?*</label><br>
-                        <input type="number" name="CantidadKits" step="1" min="1" max="10" value="1">
-                    </div>
-                    <div data-netlify-recaptcha="true" class="Centrado" style="padding: 1rem 0"></div>
-                    <br>
-                    <input type="submit" value="Enviar">
                 </div>
-            </form>
+                <div class="Kit">
+                    <div id="Medio" class="KitInfo">
+                        <img src="http://placekitten.com/300/300" alt="">
+                        <h3>Medio</h3>
+                        <h4>Precio: $700</h4>
+                        <h4>¿Qué contiene?</h4>
+                        <ul>
+                            <li>
+                                <p>Cuenta con 4 semillas (zapallito, berenjena, espinaca y acelga)</p>
+                            </li>
+                            <li>
+                                <p>Un cajon de 60x30x15</p>
+                            </li>
+                            <li>
+                                <p>5 tutores</p>
+                            </li>
+                            <li>
+                                <p>Una guía con el paso a paso</p>
+                            </li>
+                            <li>
+                                <p>Una aromática</p>
+                            </li>
+                            <li>
+                                <p>Una bolsa de compost</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Kit">
+                    <div id="Avanzado" class="KitInfo">
+                        <img src="http://placekitten.com/300/300" alt="">
+                        <h3>Avanzado</h3>
+                        <h4>Precio: $600</h4>
+                        <h4>¿Qué contiene?</h4>
+                        <ul>
+                            <li>
+                                <p>Cuenta con 2 semillas (zanahoria y cebolla)</p>
+                            </li>
+                            <li>
+                                <p>Un cajon de 60x30x15</p>
+                            </li>
+                            <li>
+                                <p>Una bolsa de compost</p>
+                            </li>
+                            <li>
+                                <p>3 tutores</p>
+                            </li>
+                            <li>
+                                <p>Una guía con el paso a paso</p>
+                            </li>
+                            <li>
+                                <p>Una aromática</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <section id="Nosotros" class="Centrado">
+            <div class="NosotrosInterior">
+                <div>
+                    <h3>El equipo</h3>
+                    <img class="img-fluid Foto-Grupal" src="/img/foto-grupal.jpeg" alt="Imagen grupal">
+                </div>
+                <div>
+                    <h2>Sobre Nosotros</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, officiis? Ab, quibusdam similique porro exercitationem fugit illo nihil. Ullam numquam iure nulla voluptatem nemo officia eum impedit aliquid eos deleniti.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <div class="Box-Shadow margin-centrado Formulario-width">
+            <h2>Contáctanos</h2>
+            <div class="Formulario">
+                <form action="Form/success.html" class="Centrado" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="Bot-Input">
+                    <div class="Contactanos" id="Contacto">
+                        <div class="Formulario-Display">
+                            <div class="bot-input" hidden>
+                                <label for="Bot-Input">No llenes esto si sos humano</label>
+                                <input type="hidden" name="Bot-Input">
+                            </div>
+                            <div class="Nombre">
+                                <label for="Nombre">Nombre completo*</label><br>
+                                <input type="text" name="Nombre" placeholder="Tu Nombre" required>
+                            </div>
+                            <div class="Telefono">
+                                <label for="Telefono">Un número de contacto*</label><br>
+                                <input type="Telefono" name="Telefono" placeholder="123 456-7890" required>
+                            </div>
+                            <div class="Email">
+                                <label for="Email">Un correo de contacto</label><br>
+                                <input type="email" name="Email" placeholder="21verde.lp@gmail.com">
+                            </div>
+                            <div class="TiposKits">
+                                <label for="TiposKits">¿Qué kit queres?*</label><br>
+                                <select name="TiposKits">
+                                    <option value="Inicial">Inicial</option>
+                                    <option value="Medio">Medio</option>
+                                    <option value="Avanzado">Avanzado</option>
+                                </select>
+                            </div>
+                            <div class="CantidadKits">
+                                <label for="CantidadKits" required>¿Cuántos kits vas a comprar?*</label><br>
+                                <input type="number" name="CantidadKits" step="1" min="1" max="10" value="1">
+                            </div>
+                        </div>
+                        <div data-netlify-recaptcha="true" class="Centrado" style="padding: 1rem 0"></div>
+                        <br>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
     <footer>
@@ -101,5 +181,8 @@
 
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
 </body>
 </html>

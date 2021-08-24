@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+/* Variables */
+$color-primario:#87dfc1;
+$color-secundario:#4aa587;
+
+
+/* General */
+*{
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: inherit;
+    &::after{
+        box-sizing: inherit;
+    }
+    &::before{
+        box-sizing: inherit;
+    }
+}
+body{
+    background-color: transparent !important;
+    margin: 0%;
+    padding: 0%
+}
+html{
+    background-color: $color-primario;
+    scroll-padding-top: 10rem;
+}
+main{
+    margin-top: 10rem;;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+h3{
+    text-decoration: underline;
+}
+
+nav{
+    overflow: hidden;
+
+    text-transform: uppercase;
+    display:grid;
+    grid-template-columns: 10% 90%;
+    border-bottom: 2px solid $color-secundario;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: $color-primario;
+    & div{
+        display:flex;
+        justify-content: space-around;
+        align-items:center;
+        
+        & a{
+            text-decoration: none;
+        padding: 1rem 1rem;
+        color: black;
+        border-radius: 1rem;
+        &:hover{
+            background-color:$color-secundario;
+            color:white;
+            }
+        }
+    }
+}
+hr{
+    border: 1px solid $color-secundario;
+    max-width: 95%;
+}
+
+/* Kits */
+.Kit{
+    max-width: min-content;
+    border: 2px solid $color-secundario;
+    border-radius: 1rem;
+    background-color: #87dfc1;
+}
+.KitInfo{
+    margin: 1rem;
+}
+.Kits{
+    display:flex;
+    justify-content: space-around;
+}
+.KitsInputRadio{
+    display:flex;
+    justify-content:space-around;
+    padding-bottom: 1rem;
+}
+/* Nosotros */
+.NosotrosInterior {
+    margin-top: 1rem;
+}
+.Foto-Grupal{
+    border: 2px solid $color-secundario;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Formulario */
+.Formulario{
+    padding: 1rem 0;
+    & input, & select{
+        width: 100%;
+        height: 2rem;
+        text-align: center;
+        border-radius: 0.5rem;
+        border:none;
+        margin-bottom: 1rem;
+    }
+    & label, & p{
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+    & input[type=submit]{
+        width:50%;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 15px;
+        background-color: $color-primario;
+        border: none;
+    }
+    & select option{
+        height: 1rem
+    }
+}
+.Formulario-Display {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    column-gap: 1rem;
+    & .Nombre{
+        grid-column: 1/3;
+    }
+}
+
+/* Utilidades */
+.Centrado{
+    text-align:center;
+}
+.g-recaptcha{
+    display:inline-block;
+}
+.Box-Shadow{
+    box-shadow: 0px 10px 23px 3px rgba(0,0,0,0.3);
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: $color-secundario;
+}
+.Formulario-width{
+    max-width: 50%;
+}
+
+.margin-centrado{
+    margin: 0 auto 2rem auto;
+}
+/* Media queries */
+@media screen and(min-width:1280px) {
+    .Kit{
+        transition: transform .2s ease-out;
+        &:hover{
+            transform: scale(1.2)
+        }
+    }
+}
+@media screen and (max-width:1024px){
+    
+    .Kits{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Kit{
+        margin-bottom: 2rem;
+    }
+    .Formulario-width{
+        max-width: 100% !important;
+    }
+    .Box-Shadow{
+        border-radius: 0;
+    }
+    .Formulario-Display{
+        display:flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:640px){
+    .Logo{
+        display:none
+    }
+    nav{
+        display:block;
+        & div{
+            padding: 1rem 0;
+            font-size: 20px;
+        }
+    }
+
+}

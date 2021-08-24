@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{font-family: 'Ubuntu', sans-serif;}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html{
+    background-color: #87dfc1;
+    scroll-padding-top: 10rem;
+}
+nav div{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+nav{
+    text-transform: uppercase;
+    display:grid;
+    grid-template-columns: 10% 90%;
+    border-bottom: 2px solid #4aa587;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #87dfc2be;
+}
+main{
+    margin-top: 10rem;;
+}
+nav div a:hover{
+    background-color:#4aa587;
+    color:white
+}
+nav div a{
+    text-decoration: none;
+    padding: 1rem 1rem;
+    color: black;
+    border-radius: 1rem;
+}
+
+.Centrado{
+    text-align:center;
+}
+.g-recaptcha{
+    display:inline-block;
+}
+.Kit{
+    max-width: 340px;
+    border: 2px solid black;
+    transition: transform .2s ease-out;
+    background-color: #87dfc1;
+}
+.Kit:hover{
+    transform: scale(1.2)
+}
+.KitInfo{
+    margin: 1rem;
+}
+.Kits{
+    display:flex;
+    justify-content: space-around
+}
+.Formulario{
+    border: 2px solid black;
+    max-width: 25%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+.Formulario input{
+    border-radius: 1rem;
+    text-align: center;
+}
