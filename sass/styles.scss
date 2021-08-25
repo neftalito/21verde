@@ -171,6 +171,11 @@ hr{
 .margin-centrado{
     margin: 0 auto 2rem auto;
 }
+.requerido::after{
+    content: " *";
+    color: red;
+    font-size: 90%;
+}
 /* Media queries */
 @media screen and(min-width:1280px) {
     .Kit{

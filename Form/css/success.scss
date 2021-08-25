@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+$color-primario:#87dfc1;
+$color-secundario:#4aa587;
+$boton-presionado: #3c7461;
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: inherit;
+    &::after{
+        box-sizing: inherit;
+    }
+    &::before{
+        box-sizing: inherit;
+    }
+}
+body{
+    margin:0%;
+    padding:0%;
+    background-color: $color-primario;
+}
+.Contenedor-centrado{
+    width:20rem;
+    height:max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Box-Shadow{
+    box-shadow: 0px 10px 23px 3px rgba(0,0,0,0.3);
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: $color-secundario;
+}
+.Success{
+    padding: 3rem;
+    & p{
+        text-align: center;
+        color:white;
+        margin-bottom: 2rem;
+    }
+    & a{
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        color:black;
+        padding:1rem;
+        background-color:$color-primario;
+        border-radius: 1rem;
+        &:hover{
+            background-color: $boton-presionado;
+            color:white;
+        }
+    }
+}
+.centrado{
+    text-align: center;
+}

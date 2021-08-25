@@ -22,7 +22,7 @@
     <header>
         <nav>
             <a href="#top" class="Logo">
-                <img src="img/logo.webp" width="100px">
+                <img src="img/logo.webp" alt="Logo" width="100px">
             </a>
             <div>
                 <a href="#NuestrosKits">Nuestros Kits</a>
@@ -148,11 +148,11 @@
                                 <input type="hidden" name="Bot-Input">
                             </div>
                             <div class="Nombre">
-                                <label for="Nombre">Nombre completo*</label><br>
+                                <label class="requerido" for="Nombre">Nombre completo</label><br>
                                 <input type="text" name="Nombre" placeholder="Tu Nombre" required>
                             </div>
                             <div class="Telefono">
-                                <label for="Telefono">Un número de contacto*</label><br>
+                                <label class="requerido" for="Telefono">Un número de contacto</label><br>
                                 <input type="Telefono" inputmode="tel" name="Telefono" placeholder="123 456-7890" required>
                             </div>
                             <div class="Email">
@@ -160,7 +160,7 @@
                                 <input type="email" name="Email" placeholder="21verde.lp@gmail.com">
                             </div>
                             <div class="TiposKits">
-                                <label for="TiposKits">¿Qué kit queres?*</label><br>
+                                <label class="requerido" for="TiposKits">¿Qué kit queres?</label><br>
                                 <select name="TiposKits">
                                     <option value="Inicial">Inicial</option>
                                     <option value="Medio">Medio</option>
@@ -168,7 +168,7 @@
                                 </select>
                             </div>
                             <div class="CantidadKits">
-                                <label for="CantidadKits" required>¿Cuántos kits vas a comprar?*</label><br>
+                                <label class="requerido" for="CantidadKits" required>¿Cuántos kits vas a comprar?</label><br>
                                 <input type="number" name="CantidadKits" step="1" min="1" max="10" value="1">
                             </div>
                         </div>
