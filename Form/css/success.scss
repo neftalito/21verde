@@ -35,10 +35,15 @@ body{
 }
 .Success{
     padding: 3rem;
+    & img{
+        background-color: white;
+        border-radius: 50%;
+    }
     & p{
         text-align: center;
         color:white;
         margin-bottom: 2rem;
+        font-size: 1.2rem;
     }
     & a{
         text-transform: uppercase;
