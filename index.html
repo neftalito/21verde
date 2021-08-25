@@ -40,77 +40,85 @@
             </p>
 
         </div>
-        <hr>s
+        <hr>
         <section id="NuestrosKits">
 
             <h2>Nuestros kits</h2>
-            <div class="Kits">
-                <div class="Kit Box-Shadow-Kit">
-                        <div id="Inicial" class="KitInfo">
+            <div id="SlideJs">
+                <button class="BotonSlide" onclick="CambiarKit(-1)" hidden>
+                    Atras
+                </button>
+                <div class="Kits">
+                    <div class="Kit Box-Shadow-Kit">
+                            <div id="Inicial" class="KitInfo">
+                                <img src="http://placekitten.com/300/300" alt="">
+                                <h3>Inicial</h3>
+                                <h4>Precio: $650</h4>
+                                <h4>¿Qué contiene?</h4>
+                                <ul>
+                                    <li>
+                                        <p>Cuenta con 3 semillas (tomate, morrón, lechuga)</p>
+                                    </li>
+                                    <li>
+                                        <p>Un cajon de 60x30x15</p>
+                                    </li>
+                                    <li>
+                                        <p>4 tutores</p>
+                                    </li>
+                                </ul>
+                                <div class="BotonComprar Centrado">
+                                    <a href=#Contacto onclick="javascript:ComprarKit(0)">Comprar</a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="Kit Box-Shadow-Kit">
+                        <div id="Medio" class="KitInfo">
                             <img src="http://placekitten.com/300/300" alt="">
-                            <h3>Inicial</h3>
-                            <h4>Precio: $650</h4>
+                            <h3>Medio</h3>
+                            <h4>Precio: $700</h4>
                             <h4>¿Qué contiene?</h4>
                             <ul>
                                 <li>
-                                    <p>Cuenta con 3 semillas (tomate, morrón, lechuga)</p>
+                                    <p>Cuenta con 4 semillas (zapallito, berenjena, espinaca y acelga)</p>
                                 </li>
                                 <li>
                                     <p>Un cajon de 60x30x15</p>
                                 </li>
                                 <li>
-                                    <p>4 tutores</p>
+                                    <p>5 tutores</p>
                                 </li>
                             </ul>
                             <div class="BotonComprar Centrado">
-                                <a href=#Contacto onclick="javascript:ComprarKit(0)">Comprar</a>
+                                <a href=#Contacto onclick="javascript:ComprarKit(1)">Comprar</a>
                             </div>
                         </div>
-                </div>
-                <div class="Kit Box-Shadow-Kit">
-                    <div id="Medio" class="KitInfo">
-                        <img src="http://placekitten.com/300/300" alt="">
-                        <h3>Medio</h3>
-                        <h4>Precio: $700</h4>
-                        <h4>¿Qué contiene?</h4>
-                        <ul>
-                            <li>
-                                <p>Cuenta con 4 semillas (zapallito, berenjena, espinaca y acelga)</p>
-                            </li>
-                            <li>
-                                <p>Un cajon de 60x30x15</p>
-                            </li>
-                            <li>
-                                <p>5 tutores</p>
-                            </li>
-                        </ul>
-                        <div class="BotonComprar Centrado">
-                            <a href=#Contacto onclick="javascript:ComprarKit(1)">Comprar</a>
+                    </div>
+                    <div class="Kit Box-Shadow-Kit">
+                        <div id="Avanzado" class="KitInfo">
+                            <img src="http://placekitten.com/300/300" alt="">
+                            <h3>Avanzado</h3>
+                            <h4>Precio: $600</h4>
+                            <h4>¿Qué contiene?</h4>
+                            <ul>
+                                <li>
+                                    <p>Cuenta con 2 semillas (zanahoria y cebolla)</p>
+                                </li>
+                                <li>
+                                    <p>Un cajon de 60x30x15</p>
+                                </li>
+                                <li>
+                                    <p>3 tutores</p>
+                                </li>
+                            </ul>
+                            <div class="BotonComprar Centrado">
+                                <a href=#Contacto onclick="javascript:ComprarKit(2)">Comprar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="Kit Box-Shadow-Kit">
-                    <div id="Avanzado" class="KitInfo">
-                        <img src="http://placekitten.com/300/300" alt="">
-                        <h3>Avanzado</h3>
-                        <h4>Precio: $600</h4>
-                        <h4>¿Qué contiene?</h4>
-                        <ul>
-                            <li>
-                                <p>Cuenta con 2 semillas (zanahoria y cebolla)</p>
-                            </li>
-                            <li>
-                                <p>Un cajon de 60x30x15</p>
-                            </li>
-                            <li>
-                                <p>3 tutores</p>
-                            </li>
-                        </ul>
-                        <div class="BotonComprar Centrado">
-                            <a href=#Contacto onclick="javascript:ComprarKit(2)">Comprar</a>
-                        </div>
-                    </div>
-                </div>
+                <button class="BotonSlide" onclick="CambiarKit(+1)" hidden>
+                    Siguiente
+                </button>
             </div>
             <hr>
             <div class="KitsGeneralidades Centrado">
