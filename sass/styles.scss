@@ -232,6 +232,20 @@ footer{
         }
     }
 }
+@media screen and (max-width:1240px){
+    
+    .Formulario-width{
+        max-width: 100% !important;
+    }
+    .Box-Shadow{
+        border-radius: 0;
+    }
+    .Formulario-Display{
+        display:flex;
+        flex-direction: column;
+    }
+
+}
 @media screen and(max-width:1160px) {
     .Kits{
         flex-direction: column;
@@ -246,20 +260,6 @@ footer{
         border-radius: 0;
     }
     
-}
-@media screen and (max-width:1024px){
-    
-    .Formulario-width{
-        max-width: 100% !important;
-    }
-    .Box-Shadow{
-        border-radius: 0;
-    }
-    .Formulario-Display{
-        display:flex;
-        flex-direction: column;
-    }
-
 }
 
 @media screen and (max-width:640px){
