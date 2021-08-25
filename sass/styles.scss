@@ -29,8 +29,11 @@ html{
 main{
     margin-top: 10rem;;
 }
+h1{
+    text-transform: capitalize;
+}
 h2{
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: center;
     text-decoration: underline;
 }
@@ -82,7 +85,13 @@ hr{
     border: 1px solid $color-secundario;
     max-width: 95%;
 }
-
+/* Titulo */
+.Titulo{
+    p{
+        font-size: 1.2rem;
+        text-transform: capitalize;
+    }
+}
 /* Kits */
 .Kit{
     max-width: min-content;
@@ -103,11 +112,33 @@ hr{
     display:flex;
     justify-content: space-around;
 }
-.KitsInputRadio{
-    display:flex;
-    justify-content:space-around;
-    padding-bottom: 1rem;
+.BotonComprar{
+    a{
+        color:black;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1rem;
+        background-color: $color-secundario;
+        border-radius: 1rem;
+        transition: all 0.2s ease;
+        &:hover{
+            background-color: $color-terciario;
+            color:white;
+        }
+    }
 }
+
+
+.KitsGeneralidades{
+    margin-top: 2rem;
+}
+.ListaGeneralidadesKits{
+    & ul{
+        text-align: left;
+        display:inline-block;
+    }
+}
+
 /* Nosotros */
 .NosotrosInterior {
     margin-top: 1rem;
@@ -245,7 +276,6 @@ footer{
 .Formulario-width{
     max-width: 50%;
 }
-
 .margin-centrado{
     margin: 0 auto 2rem auto;
 }
@@ -254,13 +284,16 @@ footer{
     color: red;
     font-size: 90%;
 }
+.no-deco{
+    text-decoration: none;
+}
 
 /* Media queries */
 @media screen and(min-width:1280px) {
     .Kit{
         transition: transform .2s ease-out;
         &:hover{
-            transform: scale(1.2)
+            transform: scale(1.05)
         }
     }
 }

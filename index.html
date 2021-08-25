@@ -33,7 +33,14 @@
         </nav>
     </header>
     <main>
+        <div class="Titulo Centrado">
+            <h1>Kits de huerta para tu hogar</h1>
+            <p>
+                "Viejas tradiciones, Nuevas posibilidades."
+            </p>
 
+        </div>
+        <hr>s
         <section id="NuestrosKits">
 
             <h2>Nuestros kits</h2>
@@ -52,19 +59,13 @@
                                     <p>Un cajon de 60x30x15</p>
                                 </li>
                                 <li>
-                                    <p>Una bolsa de compost</p>
-                                </li>
-                                <li>
-                                    <p>Una guía con el paso a paso</p>
-                                </li>
-                                <li>
                                     <p>4 tutores</p>
                                 </li>
-                                <li>
-                                    <p>Una planta aromática</p>
-                                </li>
                             </ul>
-                    </div>
+                            <div class="BotonComprar Centrado">
+                                <a href=#Contacto onclick="javascript:ComprarKit(0)">Comprar</a>
+                            </div>
+                        </div>
                 </div>
                 <div class="Kit Box-Shadow-Kit">
                     <div id="Medio" class="KitInfo">
@@ -82,16 +83,10 @@
                             <li>
                                 <p>5 tutores</p>
                             </li>
-                            <li>
-                                <p>Una guía con el paso a paso</p>
-                            </li>
-                            <li>
-                                <p>Una aromática</p>
-                            </li>
-                            <li>
-                                <p>Una bolsa de compost</p>
-                            </li>
                         </ul>
+                        <div class="BotonComprar Centrado">
+                            <a href=#Contacto onclick="javascript:ComprarKit(1)">Comprar</a>
+                        </div>
                     </div>
                 </div>
                 <div class="Kit Box-Shadow-Kit">
@@ -108,20 +103,35 @@
                                 <p>Un cajon de 60x30x15</p>
                             </li>
                             <li>
-                                <p>Una bolsa de compost</p>
-                            </li>
-                            <li>
                                 <p>3 tutores</p>
                             </li>
+                        </ul>
+                        <div class="BotonComprar Centrado">
+                            <a href=#Contacto onclick="javascript:ComprarKit(2)">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="KitsGeneralidades Centrado">
+                <h3>A tener en cuenta</h3>
+                <p>
+                    <p style="font-size: 1.2rem;">Todos los kits contienen:</p>
+                    <div class="ListaGeneralidadesKits">
+                        <ul>
                             <li>
-                                <p>Una guía con el paso a paso</p>
+                                Una bolsa de compost
                             </li>
                             <li>
-                                <p>Una aromática</p>
+                                Una guía paso a paso
+                            </li>
+                            <li>
+                                Una planta aromatica
                             </li>
                         </ul>
                     </div>
-                </div>
+                    Los envios son en la zona de X
+                </p>
             </div>
         </section>
         <hr>
@@ -133,11 +143,25 @@
                 </div>
                 <div>
                     <h2>Sobre Nosotros</h2>
-                    <p></p>
+                    <p>Somos alumnos del colegio Juan XXIII de Argentina, La Plata y participamos del proyecto "Aprender a emprender" de <a class="text-black" href="https://aprenderaemprender.org.ar/" target="_blank">Junior Achievement</a>.<br> 
+                        Creamos la empresa 21Verde, y vendemos unos kits de huerta para que puedas tener una cuarentena más llevadera
+                    </p>
                 </div>
                 <div>
-                    <h3>Nuestra mision</h3>
-                    <p></p>
+                    <h3>Nuestros objetivos</h3>
+                    <div class="ListaGeneralidadesKits">
+                        <ul>
+                            <li>
+                                Tener un producto sano, productivo y que no contamine
+                            </li>
+                            <li>
+                                Despejar tu cabeza con algo natural
+                            </li>
+                            <li>
+                                Tener tu propia huerta en casa
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -166,7 +190,7 @@
                             </div>
                             <div class="TiposKits">
                                 <label class="requerido" for="TiposKits">¿Qué kit queres?</label><br>
-                                <select name="TiposKits">
+                                <select id="ListaKitsFormulario" name="TiposKits">
                                     <option value="Inicial">Inicial</option>
                                     <option value="Medio">Medio</option>
                                     <option value="Avanzado">Avanzado</option>
@@ -211,5 +235,6 @@
             <p>&copy Todos los derechos reservados 2021-2022</p>
         </div>
     </footer>
+    <script src="/js/main.js"></script>
 </body>
 </html>
