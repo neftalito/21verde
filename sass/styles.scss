@@ -2,6 +2,7 @@
 /* Variables */
 $color-primario:#87dfc1;
 $color-secundario:#4aa587;
+$color-terciario: #3c7461;
 
 
 /* General */
@@ -90,6 +91,8 @@ hr{
     margin: 1rem;
     & img{
         border-radius: 1rem;
+        /* border: 1px solid white;
+        padding: 0.5rem;*/
     }
 }
 .Kits{
@@ -137,6 +140,9 @@ hr{
         font-size: 15px;
         background-color: $color-primario;
         border: none;
+        &:hover{
+            background-color: $color-terciario;
+        }
     }
     & select option{
         height: 1rem
@@ -182,6 +188,41 @@ hr{
     color: red;
     font-size: 90%;
 }
+
+/* Footer */
+footer{
+    display:grid;
+    grid-template-columns: /*calc(100%/3) */ auto auto auto;
+    
+    padding-top: 1rem;
+    background-color: $color-secundario;
+    margin-top:3rem;
+    & #LogoFooter{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        & img{
+            background-color: white;
+            border-radius: 50%;
+        }
+    }
+    & #Redes{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 3/4;
+        & a{
+            text-decoration: none;
+            margin: 1rem;
+            & img{
+                background-color: $color-terciario;
+                border-radius: 0.5rem;
+                padding: 0.5rem;
+            }
+        }
+    }
+}
+
 /* Media queries */
 @media screen and(min-width:1280px) {
     .Kit{
