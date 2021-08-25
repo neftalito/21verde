@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-
+/* Variables */
 $color-primario:#87dfc1;
 $color-secundario:#4aa587;
 $boton-presionado: #3c7461;
 
+/* Generales */
 *{
     font-family: 'Ubuntu', sans-serif;
     box-sizing: inherit;
@@ -19,6 +20,7 @@ body{
     padding:0%;
     background-color: $color-primario;
 }
+/* Utilidades */
 .Contenedor-centrado{
     width:20rem;
     height:max-content;
@@ -33,6 +35,22 @@ body{
     border-radius: 1rem;
     background-color: $color-secundario;
 }
+.centrado{
+    text-align: center;
+}
+.ListaProblemas{
+    padding-bottom: 2rem;
+    color:white;
+    & ul{
+        text-align: left;
+        display:inline-block;
+    }
+    & p{
+        font-size: 1rem;
+    }
+}
+
+/* Formato General */
 .Success{
     padding: 3rem;
     & img{
@@ -45,7 +63,7 @@ body{
         margin-bottom: 2rem;
         font-size: 1.2rem;
     }
-    & a{
+    & #Volver{
         text-transform: uppercase;
         text-decoration: none;
         font-weight: bold;
@@ -59,6 +77,14 @@ body{
         }
     }
 }
-.centrado{
-    text-align: center;
+
+@media screen and (max-width: 420px) {
+    .Box-Shadow{
+        border-radius: 0;
+    }
+    .Success{
+        img{
+            width: 10rem;
+        }
+    }
 }
