@@ -3,6 +3,7 @@
 $color-primario:#87dfc1;
 $color-secundario:#4aa587;
 $color-terciario: #3c7461;
+$color-terciario-oscuro: #33584c;
 
 
 /* General */
@@ -39,6 +40,8 @@ h3{
 h2,h3{
     text-decoration-color: $color-secundario;
 }
+
+/*Navegacion*/
 nav{
     overflow: hidden;
 
@@ -61,6 +64,7 @@ nav{
         padding: 1rem 1rem;
         color: black;
         border-radius: 1rem;
+        transition: all 0.2s ease;
         &:hover{
             background-color:$color-secundario;
             color:white;
@@ -140,6 +144,7 @@ hr{
         font-size: 15px;
         background-color: $color-primario;
         border: none;
+        transition: all 0.2s ease;
         &:hover{
             background-color: $color-terciario;
         }
@@ -188,6 +193,9 @@ footer{
                     background-color: $color-terciario;
                     border-radius: 0.5rem;
                     padding: 0.5rem;
+                    &:hover{
+                        background-color: $color-terciario-oscuro;
+                    }
                 }
             }
         }
