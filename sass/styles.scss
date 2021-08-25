@@ -43,6 +43,23 @@ h3{
 h2,h3{
     text-decoration-color: $color-secundario;
 }
+/* Scrollbar */
+::-webkit-scrollbar{
+    width: 13px;
+    height: 13px;
+}
+::-webkit-scrollbar-thumb{
+    background: $color-terciario-oscuro;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: $color-terciario;
+}
+::-webkit-scrollbar-track{
+    background: $color-primario;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px 0px #000000;
+}
 
 /*Navegacion*/
 nav{
