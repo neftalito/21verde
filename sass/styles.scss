@@ -328,7 +328,9 @@ footer{
 .no-deco{
     text-decoration: none;
 }
-
+.no-select{
+    user-select: none;
+}
 /* Media queries */
 @media screen and(min-width:1280px) {
     .Kit{
