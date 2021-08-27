@@ -157,6 +157,11 @@ hr{
         display:inline-block;
     }
 }
+.MapaResponsive iframe{
+    border: 2px solid $color-secundario !important;
+    border-radius: 1rem;
+    width: 50%;
+}
 /* Kits Slide */
 .KitSlide{
     display: grid;
@@ -399,6 +404,9 @@ footer{
     
 }
 @media screen and (max-width:640px){
+    .MapaResponsive iframe{
+        height: 100%;
+    }
     .Logo{
         display:none
     }
