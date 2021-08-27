@@ -175,18 +175,24 @@ hr{
         border: none;
         border-radius: 1rem;
         color:white;
-        &:hover{
-            background-color: rgba(0, 0, 0, 0.596);
-        }
         &:nth-child(1){
             justify-self: flex-end;
         }
     }
 }
-
+/*Fix mobile hover*/
+@media (hover: hover){
+    .BotonSlide:hover{
+        background-color: rgba(0, 0, 0, 0.596);
+    }
+}
 /* Nosotros */
 .NosotrosInterior {
     margin-top: 1rem;
+    & .NosotrosInfo{
+        margin: 0 1rem; 
+        /*text-align: center;*/
+    }
 }
 .Foto-Grupal{
     border: 2px solid $color-secundario;
@@ -405,7 +411,7 @@ footer{
 }
 @media screen and (max-width:640px){
     .MapaResponsive iframe{
-        height: 100%;
+        width: 90%;
     }
     .Logo{
         display:none
