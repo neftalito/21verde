@@ -1,5 +1,5 @@
 var n = 0;
-var Stock= [0,3,2]
+var Stock= [0,2,2]
 
 function ComprarKit(index){
     let ListaKitsFormulario = document.getElementById("ListaKitsFormulario");
