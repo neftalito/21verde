@@ -131,7 +131,7 @@ hr{
 }
 .Stock{
     font-size: 1.1rem;
-
+    margin:0;
 }
 .BotonComprar{
     a{
@@ -328,7 +328,9 @@ footer{
 .no-deco{
     text-decoration: none;
 }
-
+.no-select{
+    user-select: none;
+}
 /* Media queries */
 @media screen and(min-width:1280px) {
     .Kit{
