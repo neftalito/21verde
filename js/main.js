@@ -36,7 +36,12 @@ if(window.matchMedia("screen and (max-width:1160px)").matches){
 function PonerStock() {
     let ClassStock = document.getElementsByClassName("Stock");
     for (var i =0; i < ClassStock.length; i++){
+        if(Stock[i] === 0){
+            ClassStock[i].innerHTML = "SIN STOCK";
+        }
+        else{
         ClassStock[i].innerHTML = "Stock: " + Stock[i];
+        }
     }
 }
 PonerStock();
