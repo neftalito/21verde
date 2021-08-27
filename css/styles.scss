@@ -108,6 +108,11 @@ hr{
     border: 1px solid $color-secundario;
     max-width: 95%;
 }
+/* Fixes */
+.gmnoprint{
+    display:none;
+}
+
 /* Titulo */
 .Titulo{
     p{
