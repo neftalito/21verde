@@ -5,7 +5,13 @@ $color-secundario:#4aa587;
 $color-terciario: #3c7461;
 $color-terciario-oscuro: #33584c;
 
-
+/*
+body,html{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}*/
 /* General */
 *{
     font-family: 'Ubuntu', sans-serif;
@@ -297,7 +303,9 @@ footer{
     .Copyright{
         text-align: center;
 
-        p{display:inline-block;}
+        p{
+            display:inline-block;
+        }
     }
 }
 
@@ -437,7 +445,13 @@ footer{
     .BotonSlide{
         grid-row: 2;
     }
+    .Copyright{
+        p{
+            font-size: 1rem;
+        }
+    }
 }
+
 @media screen and (max-width:440px) {
     nav{
         & div{
