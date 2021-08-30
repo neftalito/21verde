@@ -119,10 +119,22 @@ hr{
 /* Kits */
 .Kit{
     max-width: min-content;
+    height: 40rem;
     /*border: 2px solid $color-secundario;*/
     border-radius: 1rem;
     background-color: #87dfc1;
     z-index: 99;
+    & ul{
+        height: 10rem;
+    }
+    & img{
+        padding: 0.2rem;
+        border:1px solid $color-secundario;
+    }
+    & #Inicial, #Medio, #Avanzado{
+        transition: all 0.2s linear;
+    }
+
 }
 .KitInfo{
     margin: 1rem;

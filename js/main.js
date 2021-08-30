@@ -6,7 +6,7 @@ function ComprarKit(index){
 }
 function CambiarKit(NuevoIndice){
     let ListaKits = document.getElementsByClassName("Kit");
-    let BotonSlide = document.getElementsByClassName("BotonSlide")
+    let BotonSlide = document.getElementsByClassName("BotonSlide");
     n += NuevoIndice; 
     n === 0 ? BotonSlide[0].disabled = true : BotonSlide[0].disabled = false;
     n === 2 ? BotonSlide[1].disabled = true : BotonSlide[1].disabled = false;
